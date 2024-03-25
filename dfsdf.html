@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>설문조사양식만들기</title>
 </head>
 <body>
-    <h1>zjalt테스트중</h1>
+    <header>
+    <h1>설문조사양식</h1>
+    <p>모든 항목에 빠짐없이 입력,체크해주십시오.</p>
+    </header>
+    <hr>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+                <br>
+                <label for="gender">성별</label>
+                <input type="text" id="gender">
+                <br>
+                <label for="email">e-mail</label>
+                <input type="text" id="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>설문조사</legend>
+                <p>연령대가 어떻게 되십니까</p>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">20대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">30대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">40대</label>
+                <br>
+                <p>좋아하는 음식은?</p>
+                <input type="checkbox" id="apple">
+                <label for="apple">사과</label>
+                <input type="checkbox" id="jja">
+                <label for="jja">짜장면</label>
+                <input type="checkbox" id="sam">
+                <label for="sam">삼겹살</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>자기소개란</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
